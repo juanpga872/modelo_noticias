@@ -1,0 +1,33 @@
+
+/*colección autores*/
+db.autores.insertMany([
+    { _id: 1, nombre: "Carlos", apellido: "Ramirez", email: "carlos.ramirez@gmail.com" },
+    { _id: 2, nombre: "Ana", apellido: "Lopez", email: "ana.lopez@gmail.com" },
+    { _id: 3, nombre: "David", apellido: "Fernandez", email: "david.fernandez@gmail.com" },
+    { _id: 4, nombre: "Lucia", apellido: "Gomez", email: "lucia.gomez@gmail.com" },
+    { _id: 5, nombre: "Juan", apellido: "Morales", email: "juan.morales@gmail.com" }
+]);
+
+/*colección noticias*/
+db.noticias.insertMany([
+    { titulo: "Noticia A", contenido: "Contenido noticia A", autor_id: 1, fecha_publicacion: ISODate("2001-05-15") },
+    { titulo: "Noticia B", contenido: "Contenido noticia B", autor_id: 2, fecha_publicacion: ISODate("2022-03-10") },
+    { titulo: "Noticia C", contenido: "Contenido noticia C", autor_id: 3, fecha_publicacion: ISODate("2023-06-20") },
+    { titulo: "Noticia D", contenido: "Contenido noticia D", autor_id: 5, fecha_publicacion: ISODate("2024-04-05") },
+    { titulo: "Noticia E", contenido: "Contenido noticia E", autor_id: 2, fecha_publicacion: ISODate("2024-05-15") },
+    { titulo: "Noticia F", contenido: "Contenido noticia F", autor_id: 3, fecha_publicacion: ISODate("2024-06-18") },
+    { titulo: "Noticia G", contenido: "Contenido noticia G", autor_id: 1, fecha_publicacion: ISODate("2024-07-01") },
+    { titulo: "Noticia H", contenido: "Contenido noticia H", autor_id: 2, fecha_publicacion: ISODate("2024-08-12") },
+    { titulo: "Noticia I", contenido: "Contenido noticia I", autor_id: 3, fecha_publicacion: ISODate("2024-09-22") },
+    { titulo: "Noticia J", contenido: "Contenido noticia J", autor_id: 1, fecha_publicacion: ISODate("2024-10-14") },
+    { titulo: "Noticia K", contenido: "Contenido noticia K", autor_id: 2, fecha_publicacion: ISODate("2024-11-25") },
+    { titulo: "Noticia L", contenido: "Contenido noticia L", autor_id: 3, fecha_publicacion: ISODate("2024-12-10") },
+    { titulo: "Noticia M", contenido: "Contenido noticia M", autor_id: 4, fecha_publicacion: ISODate("2024-12-20") },
+    { titulo: "Noticia N", contenido: "Contenido noticia N", autor_id: 5, fecha_publicacion: ISODate("2025-01-01") },
+    { titulo: "Noticia O", contenido: "Contenido noticia O", autor_id: 3, fecha_publicacion: ISODate("2025-02-15") },
+    { titulo: "Noticia P", contenido: "Contenido noticia P", autor_id: 1, fecha_publicacion: ISODate("2025-03-10") },
+    { titulo: "Noticia Q", contenido: "Contenido noticia Q", autor_id: 2, fecha_publicacion: ISODate("2025-04-15") },
+    { titulo: "Noticia R", contenido: "Contenido noticia R", autor_id: 3, fecha_publicacion: ISODate("2025-05-20") },
+    { titulo: "Noticia S", contenido: "Contenido noticia S", autor_id: 4, fecha_publicacion: ISODate("2025-06-25") },
+    { titulo: "Noticia T", contenido: "Contenido noticia T", autor_id: 2, fecha_publicacion: ISODate("2025-07-30") }
+]);
