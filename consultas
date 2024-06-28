@@ -1,0 +1,42 @@
+/*Obtener el listado de noticias de un autor
+db.noticias.aggregate([
+    {
+      $lookup: {
+        from: "autores",
+        localField: "autor_id",
+        foreignField: "_id",
+        as: "autor"
+      }
+    },
+    {
+       $match: { "autor.email": "carlos.ramirez@gmail.com" }
+    }
+]);
+
+/*Obtener el listado de noticias de un autor, en donde el campo de búsqueda es su nombre,
+
+db.noticias.aggregate([
+    {
+      $lookup: {
+        from: "autores",
+        localField: "autor_id",
+        foreignField: "_id",
+        as: "autor"
+      }
+    },
+    {
+      $match: { "autor.nombre": "David", "autor.apellido": "Fernandez" }
+    },
+    {
+      $sort: { fecha_publicacion: -1 }
+    }
+]);
+
+/* Obtener un listado de noticias filtrado por un rango de fechas*/
+
+db.noticias.find({
+    fecha_publicacion: {
+      $gte: new Date("2024-01-10"),
+      $lte: new Date("2024-01-30")
+    }
+});
